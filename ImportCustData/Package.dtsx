@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{9BB36611-0081-4F64-B059-E1397B5BED10}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{DCAABD64-4FF6-44BA-8395-34D33E8D0453}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,12 +27,33 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEnSGAF3yZUyZEzMmEJU1FwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAeIx3DPMlSSvDcPQjZNZfF4BYakwWQE5oj5po4bOafDAAAAAAOgAAAAAIAACAAAAAihveGyolMewkhGoL0l+lxLDQaBc1QW4fag1yX5RndDiAAAACtq/xrQOxXAxJ7nBZ16gXzQ5bMu0hoktZ0k5NTVtMTMEAAAAATkIFvpN/B3zWvZNDtDC2wcjo/ycK1N6UVsQxVa17MWQTlsm8W1n9hmh5bbhkFgRgz4REXjcwkWALLKC6sw2zl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEnSGAF3yZUyZEzMmEJU1FwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADfb9EwoEx8EhQycyeP/DHNTKQSTTvBmZdflaJvJsNzOQAAAAAOgAAAAAIAACAAAABTHszUdNw/NpVTT7xMM//wg88Hnuzut4tYjWBowMC5QyAAAAChpkkc2cKvfcyZLXz6zVYLMgtKIkbLqH6omLXbPW4ogUAAAADWSNU/0kxzn0EcAs4fADUpYB0ZtviRZ4wMX+wWfL0YukRjZesd1sV7svdkYa8wCd1PVAMwoPz2Hm7vstStAhD5</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{67FBFD5B-1009-44B2-9E72-F8693A05AFC5}"
+      DTS:ObjectName="ConnStrTestPara1">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Data Source=VISHAL-PC;User ID=sa;Initial Catalog=Test;Persist Security Info=True;Application Name=SSIS-ImportCustData-{78020E57-5152-485E-BA09-37F1BA5A792A}VISHAL-PC.Test.sa;</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{085D50E2-47E9-46A6-9224-A41D3F55CE04}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ConnStrTest1">
+      <DTS:VariableValue
+        DTS:DataType="8">Data Source=VISHAL-PC;User ID=sa;Initial Catalog=Test;Persist Security Info=True;Application Name=SSIS-ImportCustData-{78020E57-5152-485E-BA09-37F1BA5A792A}VISHAL-PC.Test.sa;</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Data Flow Task"
@@ -861,29 +882,33 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="324,34" />
+        <NodeLayout
           Size="123,42"
           Id="Package\Data Flow Task\Age Split"
           TopLeft="323,154" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Data Flow Task\ADO NET Destination 2"
+          TopLeft="680,153" />
         <NodeLayout
           Size="158,42"
           Id="Package\Data Flow Task\Data Conversion"
           TopLeft="530,36" />
         <NodeLayout
-          Size="160,42"
-          Id="Package\Data Flow Task\ADO NET Source"
-          TopLeft="113,34" />
-        <NodeLayout
           Size="190,42"
           Id="Package\Data Flow Task\ADO NET Destination 1"
           TopLeft="505,316" />
         <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task\ADO NET Source"
+          TopLeft="113,34" />
+        <NodeLayout
           Size="181,42"
           Id="Package\Data Flow Task\ADO NET Destination"
           TopLeft="295,314" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="324,34" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Teen]"
           TopLeft="365.333333333333,196">
@@ -977,6 +1002,42 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Error Output]"
+          TopLeft="634,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141,75"
+              Start="0,0"
+              End="141,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.4511278195489" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.4511278195489"
+                    Point2="0,30.4511278195489"
+                    Point3="4,30.4511278195489" />
+                  <mssgle:LineSegment
+                    End="137,30.4511278195489" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137,30.4511278195489"
+                    Point2="141,30.4511278195489"
+                    Point3="141,34.4511278195489" />
+                  <mssgle:LineSegment
+                    End="141,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.41361328125001,35.4511278195489,132.1727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Data Flow Task.Paths[Conditional Split Default Output]"
           TopLeft="403.666666666667,196">
           <EdgeLayout.Curve>
@@ -1034,51 +1095,11 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="190,42"
-          Id="Package\Data Flow Task\ADO NET Destination 2"
-          TopLeft="680,153" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Data Conversion Error Output]"
-          TopLeft="634,78">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="141,75"
-              Start="0,0"
-              End="141,67.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.4511278195489" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.4511278195489"
-                    Point2="0,30.4511278195489"
-                    Point3="4,30.4511278195489" />
-                  <mssgle:LineSegment
-                    End="137,30.4511278195489" />
-                  <mssgle:CubicBezierSegment
-                    Point1="137,30.4511278195489"
-                    Point2="141,30.4511278195489"
-                    Point3="141,34.4511278195489" />
-                  <mssgle:LineSegment
-                    End="141,67.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="4.41361328125001,35.4511278195489,132.1727734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ADO NET Source">
+    design-time-name="Package\Data Flow Task\ADO NET Destination 2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1094,7 +1115,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ADO NET Destination">
+    design-time-name="Package\Data Flow Task\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1102,7 +1123,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ADO NET Destination 2">
+    design-time-name="Package\Data Flow Task\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

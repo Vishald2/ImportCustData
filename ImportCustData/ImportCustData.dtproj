@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">VISHAL-PC</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEnSGAF3yZUyZEzMmEJU1FwAAAAACAAAAAAAQZgAAAAEAACAAAABYVq9Yn6zed/Ipoj1IhWnXsGy6JDWxVPgGLMFCD3WIXgAAAAAOgAAAAAIAACAAAADaMDsQj/uXBPn/yFthP11iOqKZzXJt9rbiDTpFrrvlqpAAAAB0njPG/hqZP4I0P+3C3CQL+hpLpe3P4zmK0ynvUC0AOCl2QaJyxRnuZ07pLqMIH48W+slgMRZiwFsTeZWgTxUrXuAs0Z9/OFb5OgCmdyA/kUvRXrsgrWAzuekk7CqX6KWJfNmS+My2q+95TJFeSoweCrk12NqAERwVgbDXU3jDDALClFlQmC9tJI/EHm9afeBAAAAAgc2dA5fy82zQA9UQv7qWxWdZydz5oceeXPAC6XPgq0SnCl2MWDuUu9dF/9uBlUG2M4agZTjZgKec5mQCQzs22g==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEnSGAF3yZUyZEzMmEJU1FwAAAAACAAAAAAAQZgAAAAEAACAAAAAma6xPjJNFUdpBrlcQWIhBhaV1B3ABktIGshIZnyjD4AAAAAAOgAAAAAIAACAAAABrTyvI1wGr95mpbJUijXmWu6W1PnuH7E4EvpUcPnNuapAAAAD4U6PCSHjZGG0fYWSIcTL9l/9n0Bzyvp5q7asQ5JPHtBwxFDPzvv4QUNdZh8z6wMEPZtJA1aWN8g3ksxLu2Sv3siST7FGYyqx+gLyrfDH9IXLq8q/GsZYB4LEVPyWcNHnGHSXhtO+erILvGSEtpSHHoFTLqT2t5kG/uJYwae1i8AeLAwuZwLSe6uCzBJDX+eNAAAAAzom4YKU1JOQrDWmdoMJft4VGUxudZA0Y2M+CoGYsV8fRqsEzAXfU/uRjQ8QzOyaU/o1Sh6OeggyJ3wNQ7mNLvQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -38,21 +38,6 @@
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
-            <SSIS:Parameter SSIS:Name="CM.VISHAL-PC.Test.sa.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=VISHAL-PC;User ID=sa;Initial Catalog=Test;Persist Security Info=True;Application Name=SSIS-ImportCustData-{78020E57-5152-485E-BA09-37F1BA5A792A}VISHAL-PC.Test.sa;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
             <SSIS:Parameter SSIS:Name="CM.VISHAL-PC.Test.sa.ConnectUsingManagedIdentity">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
@@ -254,16 +239,30 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3443F257-2B31-4095-A2F2-C16BD653CA73}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DCAABD64-4FF6-44BA-8395-34D33E8D0453}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="ConnStrTestPara1">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{67FBFD5B-1009-44B2-9E72-F8693A05AFC5}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=VISHAL-PC;User ID=sa;Initial Catalog=Test;Persist Security Info=True;Application Name=SSIS-ImportCustData-{78020E57-5152-485E-BA09-37F1BA5A792A}VISHAL-PC.Test.sa;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.VISHAL-PC.Test.sa1.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -406,7 +405,17 @@
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>
             <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2019-07-28T12:22:17.7320911Z</Value>
+            <Value xsi:type="xsd:dateTime">2019-07-28T13:22:46.876898Z</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>{67FBFD5B-1009-44B2-9E72-F8693A05AFC5}</Id>
+            <Name>Package::ConnStrTestPara1</Name>
+            <Value xsi:type="xsd:string">Data Source=VISHAL-PC;User ID=sa;Initial Catalog=Test;Persist Security Info=True;Application Name=SSIS-ImportCustData-{78020E57-5152-485E-BA09-37F1BA5A792A}VISHAL-PC.Test.sa;</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>{485523ee-c4e1-499d-bbfe-4f25f1f824f4}</Id>
+            <Name>Project::VISHALPCTestSa_ConnString</Name>
+            <Value xsi:type="xsd:string">Data Source=VISHAL-PC;User ID=sa;Initial Catalog=Test;Persist Security Info=True;Application Name=SSIS-ImportCustData-{78020E57-5152-485E-BA09-37F1BA5A792A}VISHAL-PC.Test.sa;password=Sqlpwd@123</Value>
           </ConfigurationSetting>
         </ParameterConfigurationValues>
       </Options>

@@ -3,12 +3,14 @@
   DTS:ObjectName="VISHAL-PC.Test.sa"
   DTS:DTSID="{78020E57-5152-485E-BA09-37F1BA5A792A}"
   DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::VISHALPCTestSa_ConnString]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="Data Source=VISHAL-PC;User ID=sa;Initial Catalog=Test;Persist Security Info=True;Application Name=SSIS-ImportCustData-{78020E57-5152-485E-BA09-37F1BA5A792A}VISHAL-PC.Test.sa;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEnSGAF3yZUyZEzMmEJU1FwAAAAACAAAAAAAQZgAAAAEAACAAAAAzXV3PMO/l0FTG9c4r2Uw0HhxxVc19Hgk+UIhgsMVo0wAAAAAOgAAAAAIAACAAAABdqNVDK2jZm3zRi2QlTSLsjv0UDqbvnyGvsBNvnI7O2IAAAADLqZ2HzKtqBP+cDw844zvHqARHXBR7nBCOUvMaiDdfBxx88VxXRlcsiBQPmKLo65HNsYajSGMmpuigEksMwUlqM0MIrzriyA90iQre9IZoQehJQW7ZjuVHinj9kAOeD++yzXjuOLbbkORNW9ylgSgOIoSmLWnV8ymplHsDHIrY6kAAAAB4mPTEvZwhR+G4KrJ8o/BZ/+iJGEgg9eBpKLdfJjrkLH1xn7Qm+Dhe66ZwaNJeR5bH0Fg0aWyxG06pgbc8Wnfg</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEnSGAF3yZUyZEzMmEJU1FwAAAAACAAAAAAAQZgAAAAEAACAAAAD4tD1VrL9w0YSyTgWKMRiGnee7fRFxwR3QFce2DExgTQAAAAAOgAAAAAIAACAAAAB2uW0Ji9PVggysRxHGVl/9Nuz6J7tN27ZovWB93OKBNYAAAACy1ZvZTHHH7EZ12xdPaKpIbQtf2JbfSKM6K/W2PwEzqsFSZZbMOlQHfE5p215/Kc1cZuLSzJbXxyXvX6l4bi9V/DW7gpLON+orDFBzh4+7Ge71NkrCzFSXhey6oRiQA3FeN03aJEyHPmj3HwICsRuqYux7M4vol3yvuyvsxOYWg0AAAAAMrakByL3rk3pMlxWep62/CKYbpi1Vqj1ixu9mv/wjBhOSbCSyiAZVPE1IOFu26d8kybw3/EO4kga7bogLgJFa</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
