@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ImportCustData", "ImportCustData\ImportCustData.dtproj", "{11C9790D-5E8A-4209-834F-F21C23BC83E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C9790D-5E8A-4209-834F-F21C23BC83E8}.Development|Default.ActiveCfg = Development
+		{11C9790D-5E8A-4209-834F-F21C23BC83E8}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD4802B4-7054-40B8-840C-F7E3FAAD88A5}
+	EndGlobalSection
+EndGlobal
