@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="VISHAL-PC.MainDB.sa"
+  DTS:DTSID="{1D47822B-683D-45CD-97D3-7D30F440F28E}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=VISHAL-PC;User ID=sa;Initial Catalog=MainDB;Persist Security Info=True;Application Name=SSIS-ImportCustData-{1D47822B-683D-45CD-97D3-7D30F440F28E}VISHAL-PC.MainDB.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEnSGAF3yZUyZEzMmEJU1FwAAAAACAAAAAAAQZgAAAAEAACAAAABInUxiKatAPiNAbbcXveY/+gtqjNCw5PzpBZIhGOiq3QAAAAAOgAAAAAIAACAAAABuQ5mupdSL0jLSEBT6sIYDWafdxE0WSjtpztDllmt4B4AAAAB4i2yDll3LERXvUtI2ROJemNkzTwCi4W9sLqD+qGnjz9N/ZojM1pLoEGirFQYmvHvLTFtvbK8p/wz6hK4nnR4Pbd0Ul9hrX/e/CihoHu5YETULtv+bdjPdnyC8M9ahP2X6+0TGLQh1ak8QnNTsDSNdcry68iWU1Yqr4CZGE4FMsUAAAABFcPS+UqIkAlrOx2yH0SREWkq2nzByM1lufN8BKJwhDIVkPnYAR62FgKt0eX5ibikb8SOMowDMs3IulcFphKCO</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
